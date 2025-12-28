@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tejas Babasaheb Kale | SQL Developer</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #020617;
+      color: #e5e7eb;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at top, #1e293b, #020617);
+      text-align: center;
+      padding: 20px;
+    }
+
+    .profile-img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #38bdf8;
+      margin: 0 auto 20px;
+      box-shadow: 0 0 25px rgba(56,189,248,0.7);
+    }
+
+    header h1 {
+      font-size: 3rem;
+    }
+
+    header span {
+      color: #38bdf8;
+    }
+
+    header p {
+      margin: 15px 0 25px;
+      color: #94a3b8;
+      font-size: 1.1rem;
+    }
+
+    .btns a {
+      padding: 12px 28px;
+      border-radius: 30px;
+      margin: 8px;
+      display: inline-block;
+      background: linear-gradient(135deg, #38bdf8, #6366f1);
+      font-weight: 600;
+      transition: transform 0.3s;
+    }
+
+    .btns a:hover {
+      transform: scale(1.05);
+    }
+
+    section {
+      padding: 80px 10%;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+      text-align: center;
+      color: #38bdf8;
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      padding: 30px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #94a3b8;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    @media(max-width: 768px) {
+      .about {
+        grid-template-columns: 1fr;
+      }
+
+      header h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<header>
+  <div>
+    <img src="profile.jpg" alt="Tejas Babasaheb Kale" class="profile-img">
+
+    <h1>Hi, I'm <span>Tejas Babasaheb Kale</span></h1>
+    <p>SQL Developer | 1 Year IT Experience</p>
+
+    <div class="btns">
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+      <a href="https://www.linkedin.com/in/tejaskale2777" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <div class="about">
+    <div class="card">
+      <p>
+        I am a dedicated SQL Developer with 1 year of IT experience, currently working as a Software Support Executive.
+        I specialize in writing optimized SQL queries, database management, stored procedures, and handling
+        real-time banking database operations.
+      </p>
+    </div>
+
+    <div class="card">
+      <p>
+        <b>Email:</b> kaletejas2777@gmail.com<br><br>
+        <b>Experience:</b> 1 Year (IT)<br><br>
+        <b>Location:</b> Maharashtra, India
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section>
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="card">SQL</div>
+    <div class="card">MySQL</div>
+    <div class="card">PostgreSQL</div>
+    <div class="card">Oracle Database</div>
+    <div class="card">Stored Procedures & Functions</div>
+    <div class="card">Joins, Indexing & Query Optimization</div>
+  </div>
+</section>
+
+<!-- RESUME -->
+<section id="resume">
+  <h2>Resume</h2>
+  <div class="card" style="max-width:500px;margin:auto;text-align:center">
+    <p>You can download my resume to learn more about my experience and technical skills.</p>
+    <a href="resume.pdf" target="_blank"
+       style="display:inline-block;margin-top:20px;padding:12px 30px;border-radius:30px;
+       background:linear-gradient(135deg,#38bdf8,#6366f1);font-weight:600;">
+      Download Resume
+    </a>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="card">
+      <b>Employee Management Database</b><br><br>
+      Designed normalized tables, complex joins, stored procedures, and queries
+      to manage employee records efficiently.
+    </div>
+
+    <div class="card">
+      <b>Sales Analytics Database</b><br><br>
+      Developed SQL queries, views, and reports for sales analysis, performance tracking,
+      and database optimization.
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card" style="max-width:500px;margin:auto;text-align:center">
+    <p>Let's work together 🚀</p>
+    <p>Email: kaletejas2777@gmail.com</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/tejaskale2777" target="_blank">tejaskale2777</a></p>
+    <p>GitHub: Will be added soon</p>
+  </div>
+</section>
+
+<footer>
+  © 2025 Tejas Babasaheb Kale. All Rights Reserved.
+</footer>
+
+</body>
+</html>
