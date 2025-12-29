@@ -6,187 +6,86 @@
 
 <title>Tejas Babasaheb Kale | SQL Developer</title>
 
-<meta name="description" content="SQL Developer with 1 year IT experience specializing in SQL, MySQL, Oracle, database optimization and banking systems.">
-<meta name="keywords" content="SQL Developer, MySQL, Oracle, Database Developer, Query Optimization, Banking Database">
+<meta name="description" content="SQL Developer with 1 year IT experience specializing in SQL, MySQL, Oracle, and banking databases.">
+<meta name="keywords" content="SQL Developer, MySQL, Oracle, Database Developer, Query Optimization">
 <meta name="author" content="Tejas Babasaheb Kale">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-/* ===== GLOBAL ===== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+html{scroll-behavior:smooth;}
+body{background:#020617;color:#e5e7eb;}
+a{text-decoration:none;color:inherit;}
+
+header{
+min-height:100vh;display:flex;justify-content:center;align-items:center;
+background:radial-gradient(circle at top,#1e293b,#020617);
+text-align:center;padding:20px;
 }
 
-html {
-  scroll-behavior: smooth;
+.profile-img{
+width:160px;height:160px;border-radius:50%;
+border:4px solid #38bdf8;object-fit:cover;
+box-shadow:0 0 25px rgba(56,189,248,0.7);
 }
 
-body {
-  background: #020617;
-  color: #e5e7eb;
+header h1{font-size:3rem;}
+header span{color:#38bdf8;}
+header p{margin:15px 0 25px;color:#94a3b8;}
+
+.btns a{
+display:inline-block;margin:8px;padding:12px 28px;
+border-radius:30px;background:linear-gradient(135deg,#38bdf8,#6366f1);
+font-weight:600;transition:0.3s;
+}
+.btns a:hover{transform:scale(1.05);}
+
+section{padding:80px 10%;}
+h2{text-align:center;color:#38bdf8;font-size:2.2rem;margin-bottom:40px;}
+
+.skills-accordion{max-width:900px;margin:auto;}
+.skill-item{background:rgba(255,255,255,0.05);border-radius:16px;margin-bottom:20px;overflow:hidden;}
+.skill-title{
+width:100%;background:none;border:none;padding:18px;
+display:flex;justify-content:space-between;align-items:center;
+color:#38bdf8;font-size:1.1rem;font-weight:600;cursor:pointer;
+}
+.skill-title-left{display:flex;align-items:center;gap:15px;}
+.skill-title img{width:38px;height:38px;}
+.arrow{font-size:1.6rem;transition:0.3s;}
+.skill-item.active .arrow{transform:rotate(45deg);}
+
+.skill-content{
+max-height:0;overflow:hidden;padding:0 20px;
+transition:max-height 0.5s ease,padding 0.3s ease;
+}
+.skill-item.active .skill-content{max-height:1200px;padding:20px;}
+
+.inner-img{
+width:100%;max-width:420px;margin-top:20px;
+border-radius:14px;box-shadow:0 0 20px rgba(56,189,248,0.4);
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+.projects{
+max-width:900px;margin:auto;
+display:grid;gap:30px;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 }
 
-/* ===== HERO ===== */
-header {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: radial-gradient(circle at top, #1e293b, #020617);
-  padding: 20px;
+.card{
+background:rgba(255,255,255,0.05);
+padding:25px;border-radius:18px;
 }
 
-.profile-img {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  border: 4px solid #38bdf8;
-  object-fit: cover;
-  box-shadow: 0 0 25px rgba(56,189,248,0.7);
+footer{
+text-align:center;padding:30px;
+color:#94a3b8;border-top:1px solid rgba(255,255,255,0.1);
 }
 
-header h1 {
-  font-size: 3rem;
-}
-
-header span {
-  color: #38bdf8;
-}
-
-header p {
-  margin: 15px 0 25px;
-  color: #94a3b8;
-}
-
-.btns a {
-  display: inline-block;
-  margin: 8px;
-  padding: 12px 28px;
-  border-radius: 30px;
-  background: linear-gradient(135deg, #38bdf8, #6366f1);
-  font-weight: 600;
-  transition: transform 0.3s;
-}
-
-.btns a:hover {
-  transform: scale(1.05);
-}
-
-/* ===== SECTIONS ===== */
-section {
-  padding: 80px 10%;
-}
-
-h2 {
-  text-align: center;
-  color: #38bdf8;
-  font-size: 2.2rem;
-  margin-bottom: 40px;
-}
-
-/* ===== SKILLS ACCORDION ===== */
-.skills-accordion {
-  max-width: 900px;
-  margin: auto;
-}
-
-.skill-item {
-  background: rgba(255,255,255,0.05);
-  border-radius: 16px;
-  margin-bottom: 20px;
-  overflow: hidden;
-}
-
-.skill-title {
-  width: 100%;
-  background: none;
-  border: none;
-  padding: 18px;
-  color: #38bdf8;
-  font-size: 1.1rem;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
-}
-
-.skill-title-left {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.skill-title img {
-  width: 38px;
-  height: 38px;
-}
-
-.arrow {
-  font-size: 1.6rem;
-  transition: transform 0.3s ease;
-}
-
-.skill-item.active .arrow {
-  transform: rotate(45deg);
-}
-
-.skill-content {
-  max-height: 0;
-  overflow: hidden;
-  padding: 0 20px;
-  transition: max-height 0.5s ease, padding 0.3s ease;
-}
-
-.skill-item.active .skill-content {
-  max-height: 1200px;
-  padding: 20px;
-}
-
-.skill-content ul {
-  margin-left: 20px;
-}
-
-.skill-content ul ul {
-  list-style: circle;
-  margin-top: 10px;
-}
-
-.inner-img {
-  width: 100%;
-  max-width: 420px;
-  margin-top: 20px;
-  border-radius: 14px;
-  box-shadow: 0 0 20px rgba(56,189,248,0.4);
-}
-
-/* ===== FOOTER ===== */
-footer {
-  text-align: center;
-  padding: 30px;
-  color: #94a3b8;
-  border-top: 1px solid rgba(255,255,255,0.1);
-}
-
-/* ===== MOBILE ===== */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 2.2rem;
-  }
-
-  .skill-title {
-    font-size: 1rem;
-  }
+@media(max-width:768px){
+header h1{font-size:2.2rem;}
+.skill-title{font-size:1rem;}
 }
 </style>
 </head>
@@ -195,90 +94,68 @@ footer {
 
 <!-- HERO -->
 <header>
-  <div>
-    <img src="images/profile.jpeg" class="profile-img" alt="Tejas Babasaheb Kale">
-    <h1>Hi, I'm <span>Tejas Babasaheb Kale</span></h1>
-    <p>SQL Developer | Database Optimization | Banking Systems</p>
-
-    <div class="btns">
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="resume.pdf" target="_blank">Resume</a>
-      <a href="https://www.linkedin.com/in/tejaskale2777" target="_blank">LinkedIn</a>
-    </div>
-  </div>
+<div>
+<img src="images/profile.jpeg" class="profile-img">
+<h1>Hi, I'm <span>Tejas Babasaheb Kale</span></h1>
+<p>SQL Developer | Database Optimization | Banking Systems</p>
+<div class="btns">
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="resume.pdf" target="_blank">Resume</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
 </header>
 
 <!-- SKILLS -->
 <section id="skills">
 <h2>Technical Skills</h2>
-
 <div class="skills-accordion">
 
-<!-- SQL -->
 <div class="skill-item">
 <button class="skill-title">
-  <div class="skill-title-left">
-    <img src="images/sql.png" alt="SQL">
-    SQL Development
-  </div>
-  <span class="arrow">+</span>
+<div class="skill-title-left">
+<img src="images/sql.png">SQL Development
+</div><span class="arrow">+</span>
 </button>
 <div class="skill-content">
-<p><b>Professional Summary:</b> Experience in developing optimized SQL queries for enterprise and banking databases.</p>
 <ul>
-<li>Complex SELECT queries and joins</li>
-<li>Query optimization using indexes</li>
-<li>Handling real-time production data</li>
-<li>Execution plan analysis</li>
-<li>Advanced Topics
-  <ul>
-    <li>CTEs & Subqueries</li>
-    <li>Window Functions</li>
-    <li>Performance tuning</li>
-  </ul>
-</li>
+<li>Optimized SQL queries for production systems</li>
+<li>Complex joins, subqueries & CTEs</li>
+<li>Indexing and performance tuning</li>
+<li>Window functions and execution plans</li>
 </ul>
 <img src="images/sql-inner.png" class="inner-img">
 </div>
 </div>
 
-<!-- MySQL -->
 <div class="skill-item">
 <button class="skill-title">
-  <div class="skill-title-left">
-    <img src="images/mysql.png" alt="MySQL">
-    MySQL Database
-  </div>
-  <span class="arrow">+</span>
+<div class="skill-title-left">
+<img src="images/mysql.png">MySQL Database
+</div><span class="arrow">+</span>
 </button>
 <div class="skill-content">
 <ul>
-<li>Schema design & normalization</li>
-<li>Stored procedures & functions</li>
-<li>Indexes and optimization</li>
-<li>Backup & restore operations</li>
-<li>Transactions & triggers</li>
+<li>Schema design and normalization</li>
+<li>Stored procedures and triggers</li>
+<li>Indexes, transactions, backups</li>
 </ul>
 <img src="images/mysql-inner.png" class="inner-img">
 </div>
 </div>
 
-<!-- Oracle -->
 <div class="skill-item">
 <button class="skill-title">
-  <div class="skill-title-left">
-    <img src="images/oracle.png" alt="Oracle">
-    Oracle Database (PL/SQL)
-  </div>
-  <span class="arrow">+</span>
+<div class="skill-title-left">
+<img src="images/oracle.png">Oracle Database (PL/SQL)
+</div><span class="arrow">+</span>
 </button>
 <div class="skill-content">
 <ul>
-<li>PL/SQL procedures & functions</li>
-<li>Packages and cursors</li>
+<li>PL/SQL procedures and functions</li>
 <li>Banking database operations</li>
-<li>Production issue resolution</li>
+<li>Production issue handling</li>
 </ul>
 <img src="images/oracle-inner.png" class="inner-img">
 </div>
@@ -287,17 +164,48 @@ footer {
 </div>
 </section>
 
+<!-- PROJECTS -->
+<section id="projects">
+<h2>Projects</h2>
+<div class="projects">
+<div class="card">
+<h3>Employee Management Database</h3>
+<ul>
+<li>Normalized schema design</li>
+<li>CRUD operations using SQL</li>
+<li>Joins, subqueries, procedures</li>
+</ul>
+</div>
+<div class="card">
+<h3>Sales Analytics Database</h3>
+<ul>
+<li>Sales reporting using SQL</li>
+<li>Views and optimized queries</li>
+<li>Large dataset handling</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2>Contact</h2>
+<div class="card" style="max-width:500px;margin:auto;text-align:center;">
+<p>Let’s work together 🚀</p>
+<p>Email: kaletejas2777@gmail.com</p>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/tejaskale2777" target="_blank" style="color:#38bdf8">tejaskale2777</a></p>
+</div>
+</section>
+
 <footer>
 © 2025 Tejas Babasaheb Kale. All Rights Reserved.
 </footer>
 
 <script>
-const skills = document.querySelectorAll(".skill-item");
-
-skills.forEach(skill => {
-  skill.querySelector(".skill-title").addEventListener("click", () => {
-    skill.classList.toggle("active");
-  });
+document.querySelectorAll(".skill-title").forEach(btn=>{
+btn.addEventListener("click",()=>{
+btn.parentElement.classList.toggle("active");
+});
 });
 </script>
 
