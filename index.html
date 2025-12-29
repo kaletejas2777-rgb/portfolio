@@ -1,128 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tejas Babasaheb Kale | SQL Developer</title>
-  <meta name="google-site-verification" content="Qx8GG26zmWARWhPH02qVeWMdaCqLQCafifn5yIa2b-A" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<title>Tejas Babasaheb Kale | SQL Developer</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
+<meta name="description" content="SQL Developer with 1 year IT experience specializing in SQL, MySQL, Oracle, database optimization and banking systems.">
+<meta name="keywords" content="SQL Developer, MySQL, Oracle, Database Developer, Query Optimization, Banking Database">
+<meta name="author" content="Tejas Babasaheb Kale">
 
-    body {
-      background: #020617;
-      color: #e5e7eb;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
+<style>
+/* ===== GLOBAL ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 
-    header {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: radial-gradient(circle at top, #1e293b, #020617);
-      text-align: center;
-      padding: 20px;
-    }
+html {
+  scroll-behavior: smooth;
+}
 
-    .profile-img {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid #38bdf8;
-      margin: 0 auto 20px;
-      box-shadow: 0 0 25px rgba(56,189,248,0.7);
-    }
+body {
+  background: #020617;
+  color: #e5e7eb;
+}
 
-    header h1 {
-      font-size: 3rem;
-    }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-    header span {
-      color: #38bdf8;
-    }
+/* ===== HERO ===== */
+header {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: radial-gradient(circle at top, #1e293b, #020617);
+  padding: 20px;
+}
 
-    header p {
-      margin: 15px 0 25px;
-      color: #94a3b8;
-      font-size: 1.1rem;
-    }
+.profile-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid #38bdf8;
+  object-fit: cover;
+  box-shadow: 0 0 25px rgba(56,189,248,0.7);
+}
 
-    .btns a {
-      padding: 12px 28px;
-      border-radius: 30px;
-      margin: 8px;
-      display: inline-block;
-      background: linear-gradient(135deg, #38bdf8, #6366f1);
-      font-weight: 600;
-      transition: transform 0.3s;
-    }
+header h1 {
+  font-size: 3rem;
+}
 
-    .btns a:hover {
-      transform: scale(1.05);
-    }
+header span {
+  color: #38bdf8;
+}
 
-    section {
-      padding: 80px 10%;
-    }
+header p {
+  margin: 15px 0 25px;
+  color: #94a3b8;
+}
 
-    h2 {
-      font-size: 2.2rem;
-      margin-bottom: 40px;
-      text-align: center;
-      color: #38bdf8;
-    }
+.btns a {
+  display: inline-block;
+  margin: 8px;
+  padding: 12px 28px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  font-weight: 600;
+  transition: transform 0.3s;
+}
 
-    .about {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      align-items: center;
-    }
+.btns a:hover {
+  transform: scale(1.05);
+}
 
-    .card {
-      background: rgba(255,255,255,0.05);
-      padding: 30px;
-      border-radius: 20px;
-      backdrop-filter: blur(10px);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-    }
+/* ===== SECTIONS ===== */
+section {
+  padding: 80px 10%;
+}
 
-    .skills, .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-    }
+h2 {
+  text-align: center;
+  color: #38bdf8;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+}
 
-    footer {
-      text-align: center;
-      padding: 30px;
-      color: #94a3b8;
-      border-top: 1px solid rgba(255,255,255,0.1);
-    }
+/* ===== SKILLS ACCORDION ===== */
+.skills-accordion {
+  max-width: 900px;
+  margin: auto;
+}
 
-    @media(max-width: 768px) {
-      .about {
-        grid-template-columns: 1fr;
-      }
+.skill-item {
+  background: rgba(255,255,255,0.05);
+  border-radius: 16px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
 
-      header h1 {
-        font-size: 2.2rem;
-      }
-    }
-  </style>
+.skill-title {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 18px;
+  color: #38bdf8;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.skill-title-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.skill-title img {
+  width: 38px;
+  height: 38px;
+}
+
+.arrow {
+  font-size: 1.6rem;
+  transition: transform 0.3s ease;
+}
+
+.skill-item.active .arrow {
+  transform: rotate(45deg);
+}
+
+.skill-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  transition: max-height 0.5s ease, padding 0.3s ease;
+}
+
+.skill-item.active .skill-content {
+  max-height: 1200px;
+  padding: 20px;
+}
+
+.skill-content ul {
+  margin-left: 20px;
+}
+
+.skill-content ul ul {
+  list-style: circle;
+  margin-top: 10px;
+}
+
+.inner-img {
+  width: 100%;
+  max-width: 420px;
+  margin-top: 20px;
+  border-radius: 14px;
+  box-shadow: 0 0 20px rgba(56,189,248,0.4);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #94a3b8;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  .skill-title {
+    font-size: 1rem;
+  }
+}
+</style>
 </head>
 
 <body>
@@ -130,104 +196,110 @@
 <!-- HERO -->
 <header>
   <div>
-    <img src="profile.jpeg" alt="Tejas Babasaheb Kale" class="profile-img">
-
+    <img src="images/profile.jpeg" class="profile-img" alt="Tejas Babasaheb Kale">
     <h1>Hi, I'm <span>Tejas Babasaheb Kale</span></h1>
-    <p>SQL Developer | 1 Year IT Experience</p>
+    <p>SQL Developer | Database Optimization | Banking Systems</p>
 
     <div class="btns">
+      <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
-      <a href="#resume">Resume</a>
-      <a href="#contact">Contact</a>
+      <a href="resume.pdf" target="_blank">Resume</a>
       <a href="https://www.linkedin.com/in/tejaskale2777" target="_blank">LinkedIn</a>
     </div>
   </div>
 </header>
 
-<!-- ABOUT -->
-<section id="about">
-  <h2>About Me</h2>
-  <div class="about">
-    <div class="card">
-      <p>
-        I am a dedicated SQL Developer with 1 year of IT experience, currently working as a Software Support Executive.
-        I specialize in writing optimized SQL queries, database management, stored procedures, and handling
-        real-time banking database operations.
-      </p>
-    </div>
-
-    <div class="card">
-      <p>
-        <b>Email:</b> kaletejas2777@gmail.com<br><br>
-        <b>Experience:</b> 1 Year (IT)<br><br>
-        <b>Location:</b> Maharashtra, India
-      </p>
-    </div>
-  </div>
-</section>
-
 <!-- SKILLS -->
-<section>
-  <h2>Skills</h2>
-  <div class="skills">
-    <div class="card">SQL</div>
-    <div class="card">MySQL</div>
-    <div class="card">PostgreSQL</div>
-    <div class="card">Oracle Database</div>
-    <div class="card">Stored Procedures & Functions</div>
-    <div class="card">Joins, Indexing & Query Optimization</div>
-  </div>
-</section>
+<section id="skills">
+<h2>Technical Skills</h2>
 
-<!-- RESUME -->
-<section id="resume">
-  <h2>Resume</h2>
-  <div class="card" style="max-width:500px;margin:auto;text-align:center">
-    <p>You can download my resume to learn more about my experience and technical skills.</p>
-    <a href="resume.pdf" target="_blank"
-       style="display:inline-block;margin-top:20px;padding:12px 30px;border-radius:30px;
-       background:linear-gradient(135deg,#38bdf8,#6366f1);font-weight:600;">
-      Download Resume
-    </a>
-  </div>
-</section>
+<div class="skills-accordion">
 
-<!-- PROJECTS -->
-<section id="projects">
-  <h2>Projects</h2>
-  <div class="projects">
-    <div class="card">
-      <b>Employee Management Database</b><br><br>
-      Designed normalized tables, complex joins, stored procedures, and queries
-      to manage employee records efficiently.
-    </div>
-
-    <div class="card">
-      <b>Sales Analytics Database</b><br><br>
-      Developed SQL queries, views, and reports for sales analysis, performance tracking,
-      and database optimization.
-    </div>
+<!-- SQL -->
+<div class="skill-item">
+<button class="skill-title">
+  <div class="skill-title-left">
+    <img src="images/sql.png" alt="SQL">
+    SQL Development
   </div>
-</section>
+  <span class="arrow">+</span>
+</button>
+<div class="skill-content">
+<p><b>Professional Summary:</b> Experience in developing optimized SQL queries for enterprise and banking databases.</p>
+<ul>
+<li>Complex SELECT queries and joins</li>
+<li>Query optimization using indexes</li>
+<li>Handling real-time production data</li>
+<li>Execution plan analysis</li>
+<li>Advanced Topics
+  <ul>
+    <li>CTEs & Subqueries</li>
+    <li>Window Functions</li>
+    <li>Performance tuning</li>
+  </ul>
+</li>
+</ul>
+<img src="images/sql-inner.png" class="inner-img">
+</div>
+</div>
 
-<!-- CONTACT -->
-<section id="contact">
-  <h2>Contact</h2>
-  <div class="card" style="max-width:500px;margin:auto;text-align:center">
-    <p>Let's work together 🚀</p>
-    <p>Email: kaletejas2777@gmail.com</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/tejaskale2777" target="_blank">tejaskale2777</a></p>
-    <p>GitHub: Will be added soon</p>
+<!-- MySQL -->
+<div class="skill-item">
+<button class="skill-title">
+  <div class="skill-title-left">
+    <img src="images/mysql.png" alt="MySQL">
+    MySQL Database
   </div>
+  <span class="arrow">+</span>
+</button>
+<div class="skill-content">
+<ul>
+<li>Schema design & normalization</li>
+<li>Stored procedures & functions</li>
+<li>Indexes and optimization</li>
+<li>Backup & restore operations</li>
+<li>Transactions & triggers</li>
+</ul>
+<img src="images/mysql-inner.png" class="inner-img">
+</div>
+</div>
+
+<!-- Oracle -->
+<div class="skill-item">
+<button class="skill-title">
+  <div class="skill-title-left">
+    <img src="images/oracle.png" alt="Oracle">
+    Oracle Database (PL/SQL)
+  </div>
+  <span class="arrow">+</span>
+</button>
+<div class="skill-content">
+<ul>
+<li>PL/SQL procedures & functions</li>
+<li>Packages and cursors</li>
+<li>Banking database operations</li>
+<li>Production issue resolution</li>
+</ul>
+<img src="images/oracle-inner.png" class="inner-img">
+</div>
+</div>
+
+</div>
 </section>
 
 <footer>
-  © 2025 Tejas Babasaheb Kale. All Rights Reserved.
+© 2025 Tejas Babasaheb Kale. All Rights Reserved.
 </footer>
+
+<script>
+const skills = document.querySelectorAll(".skill-item");
+
+skills.forEach(skill => {
+  skill.querySelector(".skill-title").addEventListener("click", () => {
+    skill.classList.toggle("active");
+  });
+});
+</script>
 
 </body>
 </html>
-
-
-
-
